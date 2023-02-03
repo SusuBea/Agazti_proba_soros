@@ -1,12 +1,17 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+}
+
+
+body{
+    background-image: url(/design/teglafal.jpg);
     font-family: Arial, Verdana, sans-serif;
     color: beige;
     font-size: 10pt;
-    background-image: url(/design/teglafal.jpg);
 }
+
 
 main {
     margin: 20px auto;
@@ -20,19 +25,17 @@ main {
         "f f";
     background-color: #333;
     filter: drop-shadow(0 0 10px #bbb);
-
-
 }
 
 
 article {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "h4 h4"
         "i ul";
-    gap: 20px;
-    text-align: justify;
+    gap: 1px;
+    text-align: justify;    
 }
 
 main,
@@ -61,12 +64,15 @@ header h1{
     font-weight: bold;
     font-family: Garamond;
     letter-spacing: 4px;
+    position: absolute;
+    text-transform: uppercase;
+
 }
 
 article img {
-    width: 100%;
-    padding: 0 10px;
+    width: 70%;
     grid-area: i;
+    padding-left: 20px;
 }
 
 
@@ -84,21 +90,24 @@ nav {
 
 footer {
     grid-area: f;
+    text-align: center;
+    background-color:  #888888;
 }
 
 
 article h4 {
     grid-area: h4;
     padding-top: 15px;
-    padding-left: 8px;
-
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
 }
-
-
 
 article ul {
     grid-area: ul;
-
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: fit-content;
 }
 
 nav ul {
@@ -106,8 +115,8 @@ nav ul {
 
 }
 
-nav ul li a {
-    text-decoration: none;
+nav ul li {
+    margin: 5px;
 }
 
 nav ul li a {
@@ -115,10 +124,58 @@ nav ul li a {
     border-radius: 4px;
     display: block;
     font-weight: bold;
+    text-decoration: none;
+    color:red;
+    padding: 3px;
+    
 }
 
 nav ul li a:hover {
-    color: red;
-    background-color: aliceblue;
+    color: white;
+    background-color: beige;
 
 }
+
+article {
+    background-color: black;
+    padding-bottom: 10px;
+
+
+
+footer{
+    text-align: center;
+}
+
+
+.table_main {
+    background-color: black;
+    margin: 15px 15px;
+    display: block;
+    max-width: 1000px;
+    width: 80%;
+    filter: drop-shadow(0 0 10px #bbb);
+    padding: 30px;
+}
+
+main table{
+    text-align: center;
+    border-collapse: collapse;
+    width:70%; 
+
+}
+
+td,th{
+    border: 1px solid #303030;
+}
+
+.table_h1{
+    margin: 10px;
+    font-size: 25px;
+}
+   
+
+.odd{
+    background-color: gray;
+}
+
+
